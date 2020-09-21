@@ -1,0 +1,7 @@
+    This folder contains X14's setup, it just locates the portable header in your compiler's source folder, remember to edit setup.bat file and replace <source-folder> by the folder you want to locate X14.
+
+      * vim setup.bat
+      * code setup.bat
+      * notepad setup.bat
+
+X14 setup file.
