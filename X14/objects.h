@@ -24,7 +24,7 @@ void MainObject::clean() {
 
 }
 
-void MainObject::show() {
+void MainObject::die() {
 	return;
 
 }
