@@ -14,7 +14,7 @@ cd setup
 ## A small warning
 If you want to use X14 you should inherit this classes:
 - **MainObject**: An important object, such as a spaceship in an asteroids game.
-- **MinimalObject**: A not important object, such as an asteroid in an asteroids game
+- **MinimalObject**: A not important object, such as an asteroid or a bullet in an asteroids game.
 
 ## License
 MIT License
