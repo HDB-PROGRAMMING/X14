@@ -1,5 +1,5 @@
 #ifndef X14
- #define X14
+ #define X14 "1.1"
 
  #include "xlibs.h"
  #include "input.h"
