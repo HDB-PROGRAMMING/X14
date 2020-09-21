@@ -2,8 +2,8 @@
  #define X14
 
  #include "xlibs.h"
- #include "keys.h"
- #include "funcs.h"
+ #include "input.h"
+ #include "output.h"
  #include "objects.h"
  #include "init.h"
 #endif

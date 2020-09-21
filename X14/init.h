@@ -1,12 +1,14 @@
-#pragma once
+#ifndef INIT
+ #define INIT
 
-void init();
-void loop();
+ void init();
+ void loop();
 
-int main() {
-	init();
+ int main() {
+	 init();
 
-	while(true) {
-		loop();
-	}
-}
+	 while(true) {
+		 loop();
+	 }
+ }
+#endif

@@ -1,5 +1,5 @@
-#ifndef KEYS
- #define KEYS
+#ifndef INPUT
+ #define INPUT
 
  #define UP_KEY 72
  #define DOWN_KEY 80
