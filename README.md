@@ -20,6 +20,12 @@ cd tests
 .\test.bat
 ```
 
+Also, you can get the CPP logout:
+```
+cd tests
+.\cpplog.bat
+```
+
 ## A small warning
 If you want to use X14 you should inherit this classes:
 - **MainObject**: An important object, such as a spaceship in an asteroids game.
