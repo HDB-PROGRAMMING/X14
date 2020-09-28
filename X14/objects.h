@@ -3,15 +3,31 @@
 
  class MainObject {
 	 int x, y;
+	 bool LBLOCK, RBLOCK, UBLOCK, DBLOCK;
 
  public:
 	 MainObject(int _x, int _y) : x(_x), y(_y) {};
+	 //Constructor
+
 	 int getX() { return x; };
 	 int getY() { return y; };
+
+	 void setLBLOCK(bool state) { this->LBLOCK = state; }
+	 void setRBLOCK(bool state) { this->RBLOCK = state; }
+	 void setUBLOCK(bool state) { this->UBLOCK = state; }
+	 void setDBLOCK(bool state) { this->DBLOCK = state; }
+
+	 bool getLBLOCK() { return LBLOCK; }
+	 bool getRBLOCK() { return RBLOCK; }
+	 bool getUBLOCK() { return UBLOCK; }
+	 bool getDBLOCK() { return DBLOCK; }
+	 //Getters and Setters
+
 	 void show();
 	 void clean();
-	 void move();
+	 void move(char key);
 	 void die();
+	 //Interaction functions
  };
 
 
@@ -32,17 +48,13 @@
  // Methods to be overwritten
 
 
- void MainObject::move() {
-	 if (kbhit()) {
-		 char key = getch();
-		 clean();
-		 if ((key == LEFT_KEY) && x > 3) x--;
-		 if ((key == RIGHT_KEY) && x < 111) x++;
-		 if ((key == UP_KEY) && y > 4) y--;
-		 if ((key == DOWN_KEY) && y < 25) y++;
-		 show();
-
-	 }
+ void MainObject::move(char key) {
+	 clean();
+	 if((key == LEFT_KEY) && KeyPressed(key) && this->LBLOCK == false)  x--;
+	 if((key == RIGHT_KEY) && KeyPressed(key) && this->RBLOCK == false) x++;
+	 if((key == UP_KEY) && KeyPressed(key) && this->UBLOCK == false)    y--;
+	 if((key == DOWN_KEY) && KeyPressed(key) && this->DBLOCK == false)  y++;
+	 show();
  } // MainObject
 
  class MinimalObject {
@@ -50,12 +62,17 @@
 
  public:
 	 MinimalObject(int _x, int _y) : x(_x), y(_y) {};
+	 //Constructor
+
 	 int getX() { return x; };
 	 int getY() { return y; };
+	 //Getters and Setters
+
 	 void show();
 	 void move();
 	 void clean();
 	 bool colision(MainObject obj, int rangeX, int rangeY);
+	 //Interaction functions
  };
 
  void MinimalObject::show() {

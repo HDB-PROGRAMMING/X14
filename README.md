@@ -11,6 +11,15 @@ cd setup
 .\setup.bat
 ```
 
+## Testing X14
+X14 testfiles are written in, so you don't need to write them manually.
+
+Testing on Windows:
+```batch
+cd tests
+.\test.bat
+```
+
 ## A small warning
 If you want to use X14 you should inherit this classes:
 - **MainObject**: An important object, such as a spaceship in an asteroids game.
