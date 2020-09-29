@@ -1,7 +1,9 @@
 #include "../X14/X14.h"
 
 void init() {
-	MainObject* principal = new MainObject(0, 0);
+	bool v1 = KeyPressed('a');
+	bool v2 = KeyPressed('b');
+	bool v3 = KeyPressed('c');
 }
 
 void loop() {

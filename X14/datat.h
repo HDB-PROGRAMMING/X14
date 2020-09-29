@@ -4,10 +4,11 @@
  #define YES 1;
  #define NO  0;
 
- typedef char        str[];
- typedef char*       String;
+ typedef char     str[];
+ typedef char*    String;
+ //Non UTF8 strings
 
- typedef void*       variable;
- typedef const void* constant;
+ typedef void*       var;
+ typedef const void* val;
 #endif
 // X14 data types

@@ -10,6 +10,11 @@
 	 dwPos.Y = y;
 	 SetConsoleCursorPosition(hCon, dwPos);
  }
+
+ void KeyPress(char key) {
+	 keybd_event(key, 0x9d, 0, 0);
+	 keybd_event(key, 0x9d, KEYEVENTF_KEYUP, 0);
+ }
  
  void HideCursor() {
 	 HANDLE hCon = GetStdHandle(STD_OUTPUT_HANDLE);

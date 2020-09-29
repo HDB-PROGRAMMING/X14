@@ -1,16 +1,21 @@
 ::X14 game engine tests
 @echo off
-g++ src_ok.cpp -o src_ok.exe
+g++ -w src_ok.cpp -o src_ok.exe
 .\src_ok.exe
 rm src_ok.exe
 ::src_ok.cpp
 
-g++ main_object.cpp -o main_object.exe
-.\main_object.exe
-rm main_object.exe
-::main_object.cpp
+g++ -w vars.cpp -o vars.exe
+.\vars.exe
+rm vars.exe
+::vars.cpp
 
-g++ minimal_object.cpp -o minimal_object.exe
-.\minimal_object.exe
-rm minimal_object.exe
-::minimal_object.cpp
+g++ -w objs.cpp -o objs.exe
+.\objs.exe
+rm objs.exe
+::objs.cpp
+
+g++ -w keybd.cpp -o keybd.exe
+.\keybd.exe
+rm keybd.exe
+::keybd.cpp
